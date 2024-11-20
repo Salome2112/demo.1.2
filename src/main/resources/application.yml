@@ -5,19 +5,16 @@ server:
     include-message: always
 
 spring:
-
   flyway:
     enabled: true
     baselineVersion: 1
-    locations:
-    classpath: db/migration
+    locations: classpath:db/migration
     sqlMigrationSuffixes: .sql
     baselineOnMigrate: true
     sqlMigrationPrefix: V
     schemas: public
 
   datasource:
-    url:
-    username:
-    password:
-    driverClassName: org.postgresql.Driver
+    url: postgres://gfsbkyjj:EMP7lG5DgXXVP9er4QSD7q37f6KIxapk@bubble.db.elephantsql.com/gfsbkyjj
+    username: sql
+    password: EMP7lG5DgXXVP9er4QSD7q37f6KIxapk
